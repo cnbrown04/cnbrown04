@@ -1,0 +1,6 @@
+{
+  // Keep LaTeX Workshop's builds out of the repo root: previews land in
+  // resume/out/ (gitignored) so they never touch the committed PDF, which is
+  // built and committed by .github/workflows/resume.yml.
+  "latex-workshop.latex.outDir": "%DIR%/out"
+}

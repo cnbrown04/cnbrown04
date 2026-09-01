@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}       % set main text size
+\usepackage[letterpaper,                % set paper size to letterpaper. change to a4paper for resumes outside of North America
+top=0.4in,                          % specify top page margin
+bottom=0.4in,                       % specify bottom page margin
+left=0.4in,                         % specify left page margin
+right=0.4in]{geometry}              % specify right page margin
+                       
+\usepackage[T1]{fontenc}            % output encoding
+\usepackage{XCharter}               % Charter text font
+\usepackage[charter]{newtxmath}     % matching math font
+\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above and below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+% uniform space above every section heading, and below every rule
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=0pt, leftmargin=12pt, topsep=0pt, parsep=0pt}
+
+% resume starts here
+\begin{document}
+
+% header: name and contact as one centered block, so the first section heading
+% gets the same \titlespacing above it as every other section
+{\centering
+{\Huge Caleb Brown}\\[5pt]
+Auburn, AL | caleb@auburn.edu | GitHub: \href{https://github.com/cnbrown04}{github.com/cnbrown04}\par}
+
+% skills section
+\section*{Technical Skills}
+\begin{itemize}
+  \item \textbf{Languages \& Frameworks:} Go/Gin, Swift, C\#, Zig, JavaScript/TypeScript, React, SQL/PostgreSQL, Unity
+  \item \textbf{Cloud \& DevOps:} Microsoft Azure, Kubernetes, ArgoCD, CI/CD, GitHub Actions, Git
+  \item \textbf{Hardware \& Standards:} RAIN RFID, NFC, 2D Barcode Systems, Zebra Handheld Readers, GS1
+  \item \textbf{Engineering \& Leadership:} Systems Architecture, Microservice Architecture, Code Review, Project Management, Team Leadership, Agile \& Scrum, Product Lifecycle Management
+\end{itemize}
+
+% experience section
+\section*{Relevant Experience}
+\textbf{Product Development Manager,} \textit{Auburn University RFID Lab -- Auburn, AL} \hfill \textit{August 2023 -- Present} \\
+\begin{itemize}
+  \item Built and maintained an RFID tag/inlay performance auditing system, keeping ARC and ALEC compliance for major Fortune 500 retail partners using React, Go/Gin, and Swift (iOS App)
+  \item Owned the full software development lifecycle ensuring coding standards, running code reviews and documentation to keep code reliable, readable and maintainable
+  \item Hired, onboarded, and mentored the team; built feedback loops and development plans that improved retention and aligned goals with partners and internally
+  \item Maintained DevOps infrastructure on Azure with multiple Kubernetes clusters, ArgoCD, and GitHub Actions CI/CD pipelines for reliable, scalable deployments
+  \item Built an iOS app alongside GS1 engineers to support a global study on 2D barcode adoption, delivering partners data tools and infrastructure
+\end{itemize}
+\vspace{3pt}
+
+\textbf{Training Director,} \textit{Chick-fil-A -- LaGrange, GA \& Auburn, AL} \hfill \textit{Aug 2020 -- Aug 2025} \\
+\begin{itemize}
+  \item Directed shift operations and staff coordination to keep dining and kitchen service running smoothly
+  \item Managed peak service periods, cutting wait times through updated staffing and workflow strategies
+  \item Executed quality checks and inventory management to maintain compliance with health and safety regulations
+  \item Designed and led training programs that raised service skill, product knowledge, and operational efficiency
+  \item Evaluated trainee progress, delivering targeted feedback and coaching to close performance gaps
+\end{itemize}
+
+% projects section
+\section*{Relevant Projects}
+\textbf{EAGLE Platform} \hfill \textit{\href{https://eagle.rfidlab.org}{eagle.rfidlab.org}} \\
+\begin{itemize}
+  \item Designed a multi-scope platform with a microservice architecture on Azure Kubernetes to assist major Fortune 500 partners in auditing their RFID performance in warehouses and stores globally
+  \item Ensured reliability of services through separation of responsibility, allowing multi-service failover without customer impact, using separate backends and frontends as well as isolated authentication and authorization
+  \item Built a dedicated iOS mobile application that integrates with Zebra handheld RFID readers by writing a Swift integration SDK from scratch
+  \item Grew the effort to a team of 10 software engineers developing and maintaining new features for major retail partners while supporting customer service and quality assurance
+\end{itemize}
+\vspace{3pt}
+
+\textbf{RFID Trilateration \& Sensor Fusion} \hfill \textit{1st Place, Auburn RFID Lab Hackathon} \\
+\begin{itemize}
+  \item Built RFID trilateration with three antennas and a single Zebra FX9600, using a Zig backend to calculate RSSI positioning in real time
+  \item Built a LiDAR and RFID sensor fusion demo for locating RFID-tagged items on a shelf based on unique identifiers stored in PostgreSQL
+\end{itemize}
+
+% certifications section
+\section*{Certifications}
+\textbf{Unity Certified Game Developer} -- C\# proficiency for game development in Unity \\
+\textbf{ServSafe Restaurant Management Certificate} -- Food safety and restaurant management
+
+% education section
+\section*{Education}
+\textbf{Auburn University} -- \textit{BS in Software Engineering} \hfill \textit{Aug 2022 -- Present}
+
+\end{document}

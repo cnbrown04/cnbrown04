@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editors / IDEs
+.idea/
+*.swp
+*~
+
+# VS Code: ignore personal settings, but share the project's LaTeX config
+.vscode/*
+!.vscode/settings.json
+
+# LaTeX build output. The committed resume PDF is built by CI; local editor
+# builds go to resume/out/ via .vscode/settings.json.
+out/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Environment / secrets
+.env
+.env.*
