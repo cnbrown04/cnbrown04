@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}       % set main text size
+\documentclass[10pt]{article}       % set main text size
 \usepackage[letterpaper,                % set paper size to letterpaper. change to a4paper for resumes outside of North America
 top=0.4in,                          % specify top page margin
 bottom=0.4in,                       % specify bottom page margin
@@ -37,6 +37,10 @@ right=0.4in]{geometry}              % specify right page margin
 {\Huge Caleb Brown}\\[5pt]
 Auburn, AL | caleb@auburn.edu | GitHub: \href{https://github.com/cnbrown04}{github.com/cnbrown04}\par}
 
+% education section
+\section*{Education}
+\textbf{Auburn University} -- \textit{BS in Software Engineering} \hfill \textit{Aug 2022 -- Expected 2027}
+
 % skills section
 \section*{Technical Skills}
 \begin{itemize}
@@ -50,47 +54,53 @@ Auburn, AL | caleb@auburn.edu | GitHub: \href{https://github.com/cnbrown04}{gith
 \section*{Relevant Experience}
 \textbf{Product Development Manager,} \textit{Auburn University RFID Lab -- Auburn, AL} \hfill \textit{August 2023 -- Present} \\
 \begin{itemize}
-  \item Built and maintained an RFID tag/inlay performance auditing system, keeping ARC and ALEC compliance for major Fortune 500 retail partners using React, Go/Gin, and Swift (iOS App)
-  \item Owned the full software development lifecycle ensuring coding standards, running code reviews and documentation to keep code reliable, readable and maintainable
-  \item Hired, onboarded, and mentored the team; built feedback loops and development plans that improved retention and aligned goals with partners and internally
-  \item Maintained DevOps infrastructure on Azure with multiple Kubernetes clusters, ArgoCD, and GitHub Actions CI/CD pipelines for reliable, scalable deployments
-  \item Built an iOS app alongside GS1 engineers to support a global study on 2D barcode adoption, delivering partners data tools and infrastructure
+  \item Built and maintained an RFID tag/inlay performance auditing system that audited 500K+ individual items for ARC and ALEC compliance across 12+ Fortune 500 partners in the US, Canada, and Mexico using React, Go/Gin, and Swift (iOS App)
+  \item Owned the full software development lifecycle for 15 services and applications, setting coding standards, running code reviews before release, and building an automated test suite covering performance and error handling
+  \item Screened 20+ candidates and hired 9 engineers; onboarded and mentored the team with feedback loops and development plans, maintaining 80\% team retention
+  \item Maintained DevOps infrastructure on Azure across 3 Kubernetes clusters, automating deployments with ArgoCD and GitHub Actions CI/CD pipelines and enabling zero-downtime rollouts with at least two replicas per service
+  \item Built an iOS app alongside GS1 engineers to support a global 2D barcode adoption study across GS1's 100+ member countries, delivering partners data tools and infrastructure
 \end{itemize}
 \vspace{3pt}
 
 \textbf{Training Director,} \textit{Chick-fil-A -- LaGrange, GA \& Auburn, AL} \hfill \textit{Aug 2020 -- Aug 2025} \\
 \begin{itemize}
-  \item Directed shift operations and staff coordination to keep dining and kitchen service running smoothly
-  \item Managed peak service periods, cutting wait times through updated staffing and workflow strategies
-  \item Executed quality checks and inventory management to maintain compliance with health and safety regulations
+  \item Directed shift operations for a \$12M restaurant, coordinating up to 40 staff members per shift
+  \item Managed peak service periods, sustaining 150+ cars and \$2,000+ in sales per hour through updated staffing and workflows
+  \item Conducted daily mock health inspections, maintaining 98+ health inspection scores and 99\%+ corporate audits
   \item Designed and led training programs that raised service skill, product knowledge, and operational efficiency
-  \item Evaluated trainee progress, delivering targeted feedback and coaching to close performance gaps
+  \item Coached trainees with targeted feedback, developing multiple team members promoted to trainer and leadership roles
 \end{itemize}
 
 % projects section
 \section*{Relevant Projects}
 \textbf{EAGLE Platform} \hfill \textit{\href{https://eagle.rfidlab.org}{eagle.rfidlab.org}} \\
 \begin{itemize}
-  \item Designed a multi-scope platform with a microservice architecture on Azure Kubernetes to assist major Fortune 500 partners in auditing their RFID performance in warehouses and stores globally
+  \item Designed a multi-scope platform with a microservice architecture on Azure Kubernetes for RFID performance auditing in partner warehouses and stores across the US, Canada, and Mexico, and ALEC item submissions from 5,000+ vendors
   \item Ensured reliability of services through separation of responsibility, allowing multi-service failover without customer impact, using separate backends and frontends as well as isolated authentication and authorization
-  \item Built a dedicated iOS mobile application that integrates with Zebra handheld RFID readers by writing a Swift integration SDK from scratch
-  \item Grew the effort to a team of 10 software engineers developing and maintaining new features for major retail partners while supporting customer service and quality assurance
+  \item Built a dedicated iOS mobile application that integrates with Zebra handheld RFID readers by writing a Swift integration SDK from scratch, automating data collection and enabling lab teams and partners to audit their own items for the first time
+  \item Grew the effort to a team of 10 software engineers developing and maintaining new features for 12+ Fortune 500 partners while supporting customer service and quality assurance
 \end{itemize}
 \vspace{3pt}
 
 \textbf{RFID Trilateration \& Sensor Fusion} \hfill \textit{1st Place, Auburn RFID Lab Hackathon} \\
 \begin{itemize}
-  \item Built RFID trilateration with three antennas and a single Zebra FX9600, using a Zig backend to calculate RSSI positioning in real time
-  \item Built a LiDAR and RFID sensor fusion demo for locating RFID-tagged items on a shelf based on unique identifiers stored in PostgreSQL
+  \item Built RFID trilateration with three antennas and a single Zebra FX9600, using a Zig backend with PostgreSQL to calculate RSSI positioning within a 10 ft radius at 1--2 second updates
+  \item Built a LiDAR and RFID sensor fusion demo that located 6 RFID-tagged items on a shelf in under a second using unique identifiers stored in PostgreSQL
 \end{itemize}
 
-% certifications section
-\section*{Certifications}
-\textbf{Unity Certified Game Developer} -- C\# proficiency for game development in Unity \\
-\textbf{ServSafe Restaurant Management Certificate} -- Food safety and restaurant management
+% involvement section
+\section*{Involvement}
+\textbf{President,} \textit{Chi Phi Fraternity -- Auburn, AL} \hfill \textit{Nov 2024 -- Nov 2025} \\
+\begin{itemize}
+  \item Led a nine-member executive council for a 30+ member chapter, growing annual recruitment 63\% (8 to 13 new members)
+  \item Served as the primary point of contact with Auburn University and external partners, keeping the chapter in good standing, securing event approvals, and organizing a New Orleans formal
+\end{itemize}
+\vspace{3pt}
 
-% education section
-\section*{Education}
-\textbf{Auburn University} -- \textit{BS in Software Engineering} \hfill \textit{Aug 2022 -- Present}
+\textbf{Director of New Member Experience,} \textit{Auburn University Interfraternity Council -- Auburn, AL} \hfill \textit{Nov 2023 -- Nov 2024} \\
+\begin{itemize}
+  \item Collaborated with all 28 Auburn University fraternities to coordinate and standardize education for 1,000+ new members
+  \item Organized ``Auburn Man,'' a speaker-led event series dedicated to inspiring and educating the next class of fraternity men
+\end{itemize}
 
 \end{document}
